@@ -1,0 +1,1180 @@
+{
+  "database": "furniture_ecommerce_db",
+  "version": "1.0.0",
+  "generated_at": "2026-03-24T00:00:00Z",
+  "description": "Full e-commerce database for a furniture & home décor store",
+
+  "store": {
+    "name": "WoodHaven Furniture",
+    "tagline": "Crafted for your everyday life",
+    "logo": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=200&q=80",
+    "currency": "USD",
+    "contact_email": "support@woodhaven.com",
+    "phone": "+1-800-555-0199"
+  },
+
+  "categories": [
+    {
+      "id": "cat_001",
+      "name": "Living Room",
+      "slug": "living-room",
+      "description": "Sofas, armchairs, coffee tables and more for your living space.",
+      "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80",
+      "parent_id": null,
+      "sort_order": 1
+    },
+    {
+      "id": "cat_002",
+      "name": "Sofas & Sectionals",
+      "slug": "sofas-sectionals",
+      "description": "Comfortable sofas and sectionals for every style.",
+      "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80",
+      "parent_id": "cat_001",
+      "sort_order": 1
+    },
+    {
+      "id": "cat_003",
+      "name": "Coffee Tables",
+      "slug": "coffee-tables",
+      "description": "Stylish coffee tables in wood, glass and metal.",
+      "image": "https://images.unsplash.com/photo-1611967164521-abae8fba4668?w=600&q=80",
+      "parent_id": "cat_001",
+      "sort_order": 2
+    },
+    {
+      "id": "cat_004",
+      "name": "Bedroom",
+      "slug": "bedroom",
+      "description": "Beds, dressers, nightstands and wardrobes.",
+      "image": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=600&q=80",
+      "parent_id": null,
+      "sort_order": 2
+    },
+    {
+      "id": "cat_005",
+      "name": "Beds & Bed Frames",
+      "slug": "beds-bed-frames",
+      "description": "Platform beds, canopy beds and upholstered frames.",
+      "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600&q=80",
+      "parent_id": "cat_004",
+      "sort_order": 1
+    },
+    {
+      "id": "cat_006",
+      "name": "Dressers & Wardrobes",
+      "slug": "dressers-wardrobes",
+      "description": "Storage solutions for your bedroom.",
+      "image": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&q=80",
+      "parent_id": "cat_004",
+      "sort_order": 2
+    },
+    {
+      "id": "cat_007",
+      "name": "Dining Room",
+      "slug": "dining-room",
+      "description": "Dining tables, chairs and buffets.",
+      "image": "https://images.unsplash.com/photo-1617806118233-18e1de247200?w=600&q=80",
+      "parent_id": null,
+      "sort_order": 3
+    },
+    {
+      "id": "cat_008",
+      "name": "Dining Tables",
+      "slug": "dining-tables",
+      "description": "Solid wood and glass dining tables for every family size.",
+      "image": "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?w=600&q=80",
+      "parent_id": "cat_007",
+      "sort_order": 1
+    },
+    {
+      "id": "cat_009",
+      "name": "Dining Chairs",
+      "slug": "dining-chairs",
+      "description": "Upholstered, wooden and metal dining chairs.",
+      "image": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=600&q=80",
+      "parent_id": "cat_007",
+      "sort_order": 2
+    },
+    {
+      "id": "cat_010",
+      "name": "Home Office",
+      "slug": "home-office",
+      "description": "Desks, office chairs and shelving for productive workspaces.",
+      "image": "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600&q=80",
+      "parent_id": null,
+      "sort_order": 4
+    },
+    {
+      "id": "cat_011",
+      "name": "Outdoor",
+      "slug": "outdoor",
+      "description": "Patio sets, lounge chairs and garden furniture.",
+      "image": "https://images.unsplash.com/photo-1600210491892-03d54078d42a?w=600&q=80",
+      "parent_id": null,
+      "sort_order": 5
+    },
+    {
+      "id": "cat_012",
+      "name": "Storage & Shelving",
+      "slug": "storage-shelving",
+      "description": "Bookcases, shelving units and storage cabinets.",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+      "parent_id": null,
+      "sort_order": 6
+    }
+  ],
+
+  "brands": [
+    {
+      "id": "brand_001",
+      "name": "OakCraft",
+      "country": "USA",
+      "logo": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=200&q=80",
+      "description": "Handcrafted solid oak furniture since 1985."
+    },
+    {
+      "id": "brand_002",
+      "name": "ModernLoft",
+      "country": "Denmark",
+      "logo": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=200&q=80",
+      "description": "Scandinavian minimalist furniture design."
+    },
+    {
+      "id": "brand_003",
+      "name": "VelvetNest",
+      "country": "Italy",
+      "logo": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=200&q=80",
+      "description": "Luxury upholstered furniture for modern interiors."
+    },
+    {
+      "id": "brand_004",
+      "name": "UrbanWood",
+      "country": "Canada",
+      "logo": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=200&q=80",
+      "description": "Reclaimed wood furniture with an industrial edge."
+    },
+    {
+      "id": "brand_005",
+      "name": "NatureLine",
+      "country": "Sweden",
+      "logo": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=200&q=80",
+      "description": "Eco-friendly sustainable furniture collections."
+    }
+  ],
+
+  "products": [
+    {
+      "id": "prod_001",
+      "name": "Haven 3-Seater Sofa",
+      "slug": "haven-3-seater-sofa",
+      "description": "A luxuriously comfortable 3-seater sofa with deep cushions, solid walnut legs and premium fabric upholstery. Perfect centerpiece for any modern living room.",
+      "category_id": "cat_002",
+      "brand_id": "brand_003",
+      "sku": "VN-SOFA-HAVEN-3S-GRY",
+      "price": 1299.00,
+      "compare_at_price": 1599.00,
+      "cost": 620.00,
+      "stock": 18,
+      "weight_kg": 52.0,
+      "dimensions": {
+        "width_cm": 210,
+        "depth_cm": 90,
+        "height_cm": 85
+      },
+      "materials": [ "Kiln-dried hardwood frame", "High-density foam", "Linen-blend fabric" ],
+      "rating": 4.8,
+      "review_count": 342,
+      "tags": [ "sofa", "living room", "3-seater", "fabric", "modern" ],
+      "images": [
+        "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80",
+        "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=800&q=80"
+      ],
+      "variants": [
+        {
+          "id": "var_001a",
+          "color": "Pebble Gray",
+          "fabric": "Linen",
+          "price": 1299.00,
+          "stock": 6
+        },
+        {
+          "id": "var_001b",
+          "color": "Forest Green",
+          "fabric": "Linen",
+          "price": 1299.00,
+          "stock": 5
+        },
+        {
+          "id": "var_001c",
+          "color": "Blush Pink",
+          "fabric": "Velvet",
+          "price": 1399.00,
+          "stock": 4
+        },
+        {
+          "id": "var_001d",
+          "color": "Midnight Blue",
+          "fabric": "Velvet",
+          "price": 1399.00,
+          "stock": 3
+        }
+      ],
+      "is_featured": true,
+      "is_active": true,
+      "created_at": "2025-01-10T09:00:00Z"
+    },
+    {
+      "id": "prod_002",
+      "name": "Nordic L-Shape Sectional",
+      "slug": "nordic-l-shape-sectional",
+      "description": "Expansive L-shaped sectional with chaise lounge, solid pine frame and removable cushion covers. Ideal for large living rooms and open-plan spaces.",
+      "category_id": "cat_002",
+      "brand_id": "brand_002",
+      "sku": "ML-SECT-NORD-L-BEG",
+      "price": 2199.00,
+      "compare_at_price": 2699.00,
+      "cost": 1050.00,
+      "stock": 10,
+      "weight_kg": 98.0,
+      "dimensions": {
+        "width_cm": 300,
+        "depth_cm": 200,
+        "height_cm": 80
+      },
+      "materials": [ "Pine frame", "Memory foam", "Cotton-blend cover (removable)" ],
+      "rating": 4.7,
+      "review_count": 189,
+      "tags": [ "sectional", "sofa", "L-shape", "large", "Scandinavian" ],
+      "images": [
+        "https://images.unsplash.com/photo-1493663284031-b7e3aaa4b2a8?w=800&q=80",
+        "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
+        "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=800&q=80"
+      ],
+      "variants": [
+        {
+          "id": "var_002a",
+          "color": "Oatmeal Beige",
+          "chaise_side": "Left",
+          "price": 2199.00,
+          "stock": 5
+        },
+        {
+          "id": "var_002b",
+          "color": "Oatmeal Beige",
+          "chaise_side": "Right",
+          "price": 2199.00,
+          "stock": 5
+        },
+        {
+          "id": "var_002c",
+          "color": "Slate Gray",
+          "chaise_side": "Left",
+          "price": 2299.00,
+          "stock": 3
+        },
+        {
+          "id": "var_002d",
+          "color": "Charcoal",
+          "chaise_side": "Right",
+          "price": 2299.00,
+          "stock": 2
+        }
+      ],
+      "is_featured": true,
+      "is_active": true,
+      "created_at": "2025-01-15T10:00:00Z"
+    },
+    {
+      "id": "prod_003",
+      "name": "Elm Round Coffee Table",
+      "slug": "elm-round-coffee-table",
+      "description": "Handcrafted solid elm round coffee table with a natural live-edge finish and tapered oak legs. Adds warmth and character to any living space.",
+      "category_id": "cat_003",
+      "brand_id": "brand_001",
+      "sku": "OC-CTBL-ELM-RND-NAT",
+      "price": 549.00,
+      "compare_at_price": 699.00,
+      "cost": 210.00,
+      "stock": 25,
+      "weight_kg": 22.0,
+      "dimensions": {
+        "diameter_cm": 90,
+        "height_cm": 45
+      },
+      "materials": [ "Solid elm", "Natural oil finish", "Tapered oak legs" ],
+      "rating": 4.9,
+      "review_count": 215,
+      "tags": [ "coffee table", "round", "wood", "natural", "living room" ],
+      "images": [
+        "https://images.unsplash.com/photo-1611967164521-abae8fba4668?w=800&q=80",
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+        "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=800&q=80"
+      ],
+      "variants": [
+        {
+          "id": "var_003a",
+          "finish": "Natural Oak",
+          "diameter": "90cm",
+          "price": 549.00,
+          "stock": 12
+        },
+        {
+          "id": "var_003b",
+          "finish": "Walnut Brown",
+          "diameter": "90cm",
+          "price": 579.00,
+          "stock": 8
+        },
+        {
+          "id": "var_003c",
+          "finish": "Whitewash",
+          "diameter": "110cm",
+          "price": 649.00,
+          "stock": 5
+        }
+      ],
+      "is_featured": false,
+      "is_active": true,
+      "created_at": "2025-02-01T08:00:00Z"
+    },
+    {
+      "id": "prod_004",
+      "name": "Oslo Platform Bed Frame",
+      "slug": "oslo-platform-bed-frame",
+      "description": "Low-profile Scandinavian platform bed frame with slatted base, headboard and solid oak legs. Pairs perfectly with any modern bedroom.",
+      "category_id": "cat_005",
+      "brand_id": "brand_002",
+      "sku": "ML-BED-OSLO-QN-OAK",
+      "price": 899.00,
+      "compare_at_price": 1099.00,
+      "cost": 390.00,
+      "stock": 30,
+      "weight_kg": 45.0,
+      "dimensions": {
+        "width_cm": 164,
+        "length_cm": 212,
+        "height_cm": 30
+      },
+      "materials": [ "MDF with oak veneer", "Solid oak legs", "Pine slats" ],
+      "rating": 4.7,
+      "review_count": 412,
+      "tags": [ "bed", "platform bed", "Scandinavian", "bedroom", "oak" ],
+      "images": [
+        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80",
+        "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800&q=80",
+        "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=800&q=80"
+      ],
+      "variants": [
+        {
+          "id": "var_004a",
+          "size": "Twin",
+          "color": "Natural Oak",
+          "price": 699.00,
+          "stock": 8
+        },
+        {
+          "id": "var_004b",
+          "size": "Full",
+          "color": "Natural Oak",
+          "price": 799.00,
+          "stock": 7
+        },
+        {
+          "id": "var_004c",
+          "size": "Queen",
+          "color": "Natural Oak",
+          "price": 899.00,
+          "stock": 10
+        },
+        {
+          "id": "var_004d",
+          "size": "King",
+          "color": "Natural Oak",
+          "price": 999.00,
+          "stock": 5
+        },
+        {
+          "id": "var_004e",
+          "size": "Queen",
+          "color": "Matte White",
+          "price": 899.00,
+          "stock": 6
+        },
+        {
+          "id": "var_004f",
+          "size": "King",
+          "color": "Matte White",
+          "price": 999.00,
+          "stock": 4
+        }
+      ],
+      "is_featured": true,
+      "is_active": true,
+      "created_at": "2025-01-20T11:00:00Z"
+    },
+    {
+      "id": "prod_005",
+      "name": "Aria Upholstered Bed",
+      "slug": "aria-upholstered-bed",
+      "description": "Elegant upholstered bed with tall tufted headboard, solid wood frame and luxurious velvet finish. A statement piece for any master bedroom.",
+      "category_id": "cat_005",
+      "brand_id": "brand_003",
+      "sku": "VN-BED-ARIA-QN-VLV-CHR",
+      "price": 1349.00,
+      "compare_at_price": 1649.00,
+      "cost": 580.00,
+      "stock": 14,
+      "weight_kg": 65.0,
+      "dimensions": {
+        "width_cm": 170,
+        "length_cm": 218,
+        "headboard_height_cm": 140
+      },
+      "materials": [ "Solid beech frame", "High-density foam headboard", "Premium velvet upholstery" ],
+      "rating": 4.8,
+      "review_count": 276,
+      "tags": [ "bed", "upholstered", "velvet", "tufted", "luxury", "bedroom" ],
+      "images": [
+        "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80",
+        "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800&q=80",
+        "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&q=80"
+      ],
+      "variants": [
+        {
+          "id": "var_005a",
+          "size": "Full",
+          "color": "Charcoal Velvet",
+          "price": 1199.00,
+          "stock": 4
+        },
+        {
+          "id": "var_005b",
+          "size": "Queen",
+          "color": "Charcoal Velvet",
+          "price": 1349.00,
+          "stock": 5
+        },
+        {
+          "id": "var_005c",
+          "size": "King",
+          "color": "Charcoal Velvet",
+          "price": 1499.00,
+          "stock": 2
+        },
+        {
+          "id": "var_005d",
+          "size": "Queen",
+          "color": "Blush Pink Velvet",
+          "price": 1349.00,
+          "stock": 3
+        }
+      ],
+      "is_featured": false,
+      "is_active": true,
+      "created_at": "2025-02-10T09:30:00Z"
+    },
+    {
+      "id": "prod_006",
+      "name": "Loft 6-Drawer Dresser",
+      "slug": "loft-6-drawer-dresser",
+      "description": "Spacious 6-drawer dresser with solid wood handles, dovetail joints and a smooth gliding drawer mechanism. Timeless design that fits any decor.",
+      "category_id": "cat_006",
+      "brand_id": "brand_001",
+      "sku": "OC-DRSR-LOFT-6D-WAL",
+      "price": 729.00,
+      "compare_at_price": 899.00,
+      "cost": 300.00,
+      "stock": 20,
+      "weight_kg": 58.0,
+      "dimensions": {
+        "width_cm": 100,
+        "depth_cm": 45,
+        "height_cm": 110
+      },
+      "materials": [ "Solid walnut", "Dovetail drawer joints", "Soft-close runners" ],
+      "rating": 4.6,
+      "review_count": 143,
+      "tags": [ "dresser", "storage", "bedroom", "walnut", "drawers" ],
+      "images": [
+        "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=800&q=80",
+        "https://images.unsplash.com/photo-1556020685-ae41abfc9365?w=800&q=80",
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
+      ],
+      "variants": [
+        {
+          "id": "var_006a",
+          "finish": "Dark Walnut",
+          "price": 729.00,
+          "stock": 10
+        },
+        {
+          "id": "var_006b",
+          "finish": "Natural Pine",
+          "price": 699.00,
+          "stock": 6
+        },
+        {
+          "id": "var_006c",
+          "finish": "White Oak",
+          "price": 749.00,
+          "stock": 4
+        }
+      ],
+      "is_featured": false,
+      "is_active": true,
+      "created_at": "2025-02-14T10:00:00Z"
+    },
+    {
+      "id": "prod_007",
+      "name": "Harvest Dining Table",
+      "slug": "harvest-dining-table",
+      "description": "Large farmhouse-style dining table crafted from reclaimed pine with a hand-rubbed oil finish and hairpin steel legs. Seats 6–8 comfortably.",
+      "category_id": "cat_008",
+      "brand_id": "brand_004",
+      "sku": "UW-DTBL-HARV-180-PIN",
+      "price": 1099.00,
+      "compare_at_price": 1399.00,
+      "cost": 450.00,
+      "stock": 12,
+      "weight_kg": 68.0,
+      "dimensions": {
+        "width_cm": 90,
+        "length_cm": 180,
+        "height_cm": 76
+      },
+      "materials": [ "Reclaimed pine top", "Hand-rubbed oil finish", "Matte black hairpin legs" ],
+      "rating": 4.9,
+      "review_count": 307,
+      "tags": [ "dining table", "farmhouse", "reclaimed wood", "seats 6", "industrial" ],
+      "images": [
+        "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?w=800&q=80",
+        "https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&q=80",
+        "https://images.unsplash.com/photo-1549497538-303791108f95?w=800&q=80"
+      ],
+      "variants": [
+        {
+          "id": "var_007a",
+          "size": "150cm (seats 4–6)",
+          "leg_finish": "Matte Black",
+          "price": 949.00,
+          "stock": 5
+        },
+        {
+          "id": "var_007b",
+          "size": "180cm (seats 6–8)",
+          "leg_finish": "Matte Black",
+          "price": 1099.00,
+          "stock": 5
+        },
+        {
+          "id": "var_007c",
+          "size": "200cm (seats 8+)",
+          "leg_finish": "Matte Black",
+          "price": 1249.00,
+          "stock": 2
+        },
+        {
+          "id": "var_007d",
+          "size": "180cm (seats 6–8)",
+          "leg_finish": "Brushed Brass",
+          "price": 1199.00,
+          "stock": 2
+        }
+      ],
+      "is_featured": true,
+      "is_active": true,
+      "created_at": "2025-01-25T08:30:00Z"
+    },
+    {
+      "id": "prod_008",
+      "name": "Ven Wishbone Dining Chair",
+      "slug": "ven-wishbone-dining-chair",
+      "description": "Iconic wishbone-inspired dining chair with solid beech frame and woven paper cord seat. Lightweight, stackable and supremely comfortable.",
+      "category_id": "cat_009",
+      "brand_id": "brand_002",
+      "sku": "ML-DCHR-VEN-WISH-BEG",
+      "price": 199.00,
+      "compare_at_price": 249.00,
+      "cost": 72.00,
+      "stock": 80,
+      "weight_kg": 5.0,
+      "dimensions": {
+        "width_cm": 55,
+        "depth_cm": 52,
+        "height_cm": 76,
+        "seat_height_cm": 45
+      },
+      "materials": [ "Solid beech", "Woven paper cord seat", "Natural oil finish" ],
+      "rating": 4.7,
+      "review_count": 528,
+      "tags": [ "dining chair", "wishbone", "Scandinavian", "beech", "stackable" ],
+      "images": [
+        "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=800&q=80",
+        "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=800&q=80",
+        "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=800&q=80"
+      ],
+      "variants": [
+        {
+          "id": "var_008a",
+          "frame_color": "Natural Beech",
+          "seat": "Natural Cord",
+          "price": 199.00,
+          "stock": 30
+        },
+        {
+          "id": "var_008b",
+          "frame_color": "Smoked Oak",
+          "seat": "Natural Cord",
+          "price": 219.00,
+          "stock": 25
+        },
+        {
+          "id": "var_008c",
+          "frame_color": "Black",
+          "seat": "Black Cord",
+          "price": 219.00,
+          "stock": 25
+        }
+      ],
+      "is_featured": false,
+      "is_active": true,
+      "created_at": "2025-02-05T09:00:00Z"
+    },
+    {
+      "id": "prod_009",
+      "name": "Crafter Standing Desk",
+      "slug": "crafter-standing-desk",
+      "description": "Electric sit-stand desk with bamboo tabletop, dual-motor height adjustment and memory presets. Built for long focused work sessions.",
+      "category_id": "cat_010",
+      "brand_id": "brand_005",
+      "sku": "NL-DESK-CRFT-STND-BAM",
+      "price": 849.00,
+      "compare_at_price": 1099.00,
+      "cost": 380.00,
+      "stock": 22,
+      "weight_kg": 38.0,
+      "dimensions": {
+        "width_cm": 140,
+        "depth_cm": 70,
+        "min_height_cm": 65,
+        "max_height_cm": 130
+      },
+      "materials": [ "Solid bamboo top", "Powder-coated steel frame", "ABS cable tray" ],
+      "rating": 4.8,
+      "review_count": 391,
+      "tags": [ "desk", "standing desk", "home office", "electric", "bamboo" ],
+      "images": [
+        "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=800&q=80",
+        "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&q=80",
+        "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=80"
+      ],
+      "variants": [
+        {
+          "id": "var_009a",
+          "width": "120cm",
+          "frame_color": "White",
+          "top": "Bamboo",
+          "price": 749.00,
+          "stock": 8
+        },
+        {
+          "id": "var_009b",
+          "width": "140cm",
+          "frame_color": "White",
+          "top": "Bamboo",
+          "price": 849.00,
+          "stock": 7
+        },
+        {
+          "id": "var_009c",
+          "width": "160cm",
+          "frame_color": "Black",
+          "top": "Bamboo",
+          "price": 949.00,
+          "stock": 4
+        },
+        {
+          "id": "var_009d",
+          "width": "140cm",
+          "frame_color": "Black",
+          "top": "Walnut",
+          "price": 999.00,
+          "stock": 3
+        }
+      ],
+      "is_featured": true,
+      "is_active": true,
+      "created_at": "2025-02-18T10:00:00Z"
+    },
+    {
+      "id": "prod_010",
+      "name": "Hana Ergonomic Office Chair",
+      "slug": "hana-ergonomic-office-chair",
+      "description": "Premium ergonomic mesh office chair with lumbar support, adjustable armrests, tilt tension and breathable backrest. Built for 8-hour workdays.",
+      "category_id": "cat_010",
+      "brand_id": "brand_005",
+      "sku": "NL-OCHR-HANA-ERG-BLK",
+      "price": 549.00,
+      "compare_at_price": 699.00,
+      "cost": 220.00,
+      "stock": 35,
+      "weight_kg": 18.0,
+      "dimensions": {
+        "width_cm": 67,
+        "depth_cm": 68,
+        "min_height_cm": 110,
+        "max_height_cm": 120
+      },
+      "materials": [ "Breathable mesh back", "Molded foam seat", "Polished aluminum base" ],
+      "rating": 4.7,
+      "review_count": 604,
+      "tags": [ "office chair", "ergonomic", "mesh", "home office", "adjustable" ],
+      "images": [
+        "https://images.unsplash.com/photo-1580480055273-228ff5388ef8?w=800&q=80",
+        "https://images.unsplash.com/photo-1541558869434-2840d308329a?w=800&q=80",
+        "https://images.unsplash.com/photo-1593642634367-d91a135587b5?w=800&q=80"
+      ],
+      "variants": [
+        {
+          "id": "var_010a",
+          "color": "All Black",
+          "armrest": "4D",
+          "price": 549.00,
+          "stock": 15
+        },
+        {
+          "id": "var_010b",
+          "color": "Black/Gray",
+          "armrest": "4D",
+          "price": 549.00,
+          "stock": 12
+        },
+        {
+          "id": "var_010c",
+          "color": "White/Gray",
+          "armrest": "4D",
+          "price": 579.00,
+          "stock": 8
+        }
+      ],
+      "is_featured": false,
+      "is_active": true,
+      "created_at": "2025-03-01T09:00:00Z"
+    },
+    {
+      "id": "prod_011",
+      "name": "Palm Outdoor Lounge Set",
+      "slug": "palm-outdoor-lounge-set",
+      "description": "Weather-resistant 4-piece rattan outdoor lounge set including sofa, two armchairs and a glass coffee table. UV-protected cushions included.",
+      "category_id": "cat_011",
+      "brand_id": "brand_001",
+      "sku": "OC-OUT-PALM-4PC-GRY",
+      "price": 1849.00,
+      "compare_at_price": 2299.00,
+      "cost": 820.00,
+      "stock": 8,
+      "weight_kg": 85.0,
+      "dimensions": {
+        "sofa": "210 × 85 × 70 cm",
+        "armchair": "80 × 85 × 70 cm",
+        "coffee_table": "100 × 60 × 35 cm"
+      },
+      "materials": [ "PE rattan weave", "Powder-coated steel frame", "Olefin UV-resistant cushions", "Tempered glass tabletop" ],
+      "rating": 4.6,
+      "review_count": 128,
+      "tags": [ "outdoor", "patio", "rattan", "lounge set", "garden" ],
+      "images": [
+        "https://images.unsplash.com/photo-1600210491892-03d54078d42a?w=800&q=80",
+        "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
+        "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=800&q=80"
+      ],
+      "variants": [
+        {
+          "id": "var_011a",
+          "frame": "Dark Gray",
+          "cushion": "Light Beige",
+          "price": 1849.00,
+          "stock": 4
+        },
+        {
+          "id": "var_011b",
+          "frame": "Dark Gray",
+          "cushion": "Terracotta",
+          "price": 1849.00,
+          "stock": 2
+        },
+        {
+          "id": "var_011c",
+          "frame": "Natural",
+          "cushion": "Sage Green",
+          "price": 1949.00,
+          "stock": 2
+        }
+      ],
+      "is_featured": false,
+      "is_active": true,
+      "created_at": "2025-03-05T08:00:00Z"
+    },
+    {
+      "id": "prod_012",
+      "name": "Modular Wall Bookcase",
+      "slug": "modular-wall-bookcase",
+      "description": "Customisable modular bookcase system with open and closed shelves, available in multiple configurations. Easy wall-mounting with included hardware.",
+      "category_id": "cat_012",
+      "brand_id": "brand_004",
+      "sku": "UW-SHELF-MOD-WALL-OAK",
+      "price": 489.00,
+      "compare_at_price": 599.00,
+      "cost": 190.00,
+      "stock": 40,
+      "weight_kg": 32.0,
+      "dimensions": {
+        "width_cm": 120,
+        "depth_cm": 30,
+        "height_cm": 200
+      },
+      "materials": [ "FSC-certified MDF", "Oak veneer", "Steel wall brackets" ],
+      "rating": 4.5,
+      "review_count": 237,
+      "tags": [ "bookcase", "shelving", "modular", "storage", "wall-mounted" ],
+      "images": [
+        "https://images.unsplash.com/photo-1541123437800-1bb1317badc2?w=800&q=80",
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80"
+      ],
+      "variants": [
+        {
+          "id": "var_012a",
+          "finish": "Oak",
+          "config": "2-column / 5-shelf",
+          "price": 489.00,
+          "stock": 15
+        },
+        {
+          "id": "var_012b",
+          "finish": "White",
+          "config": "2-column / 5-shelf",
+          "price": 469.00,
+          "stock": 15
+        },
+        {
+          "id": "var_012c",
+          "finish": "Black",
+          "config": "3-column / 6-shelf",
+          "price": 649.00,
+          "stock": 10
+        }
+      ],
+      "is_featured": false,
+      "is_active": true,
+      "created_at": "2025-02-22T11:00:00Z"
+    }
+  ],
+
+  "customers": [
+    {
+      "id": "cust_001",
+      "first_name": "Emily",
+      "last_name": "Carter",
+      "email": "emily.carter@email.com",
+      "phone": "+1-312-555-0134",
+      "avatar": "https://i.pravatar.cc/150?img=5",
+      "billing_address": {
+        "street": "12 Birchwood Lane",
+        "city": "Austin",
+        "state": "TX",
+        "zip": "73301",
+        "country": "US"
+      },
+      "shipping_address": {
+        "street": "12 Birchwood Lane",
+        "city": "Austin",
+        "state": "TX",
+        "zip": "73301",
+        "country": "US"
+      },
+      "created_at": "2024-11-02T13:45:00Z",
+      "total_orders": 3,
+      "total_spent": 3647.00
+    },
+    {
+      "id": "cust_002",
+      "first_name": "James",
+      "last_name": "Wu",
+      "email": "james.wu@email.com",
+      "phone": "+1-415-555-0288",
+      "avatar": "https://i.pravatar.cc/150?img=15",
+      "billing_address": {
+        "street": "88 Harbor View Dr",
+        "city": "San Francisco",
+        "state": "CA",
+        "zip": "94102",
+        "country": "US"
+      },
+      "shipping_address": {
+        "street": "88 Harbor View Dr",
+        "city": "San Francisco",
+        "state": "CA",
+        "zip": "94102",
+        "country": "US"
+      },
+      "created_at": "2025-01-08T10:20:00Z",
+      "total_orders": 1,
+      "total_spent": 1299.00
+    },
+    {
+      "id": "cust_003",
+      "first_name": "Sofia",
+      "last_name": "Andersen",
+      "email": "sofia.andersen@email.com",
+      "phone": "+1-206-555-0371",
+      "avatar": "https://i.pravatar.cc/150?img=47",
+      "billing_address": {
+        "street": "34 Fern Valley Rd",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98101",
+        "country": "US"
+      },
+      "shipping_address": {
+        "street": "34 Fern Valley Rd",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98101",
+        "country": "US"
+      },
+      "created_at": "2025-02-14T09:00:00Z",
+      "total_orders": 2,
+      "total_spent": 1948.00
+    }
+  ],
+
+  "orders": [
+    {
+      "id": "ord_001",
+      "customer_id": "cust_001",
+      "status": "delivered",
+      "payment_status": "paid",
+      "payment_method": "credit_card",
+      "items": [
+        {
+          "product_id": "prod_001",
+          "variant_id": "var_001a",
+          "product_name": "Haven 3-Seater Sofa – Pebble Gray / Linen",
+          "quantity": 1,
+          "unit_price": 1299.00,
+          "total": 1299.00,
+          "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=200&q=80"
+        },
+        {
+          "product_id": "prod_003",
+          "variant_id": "var_003a",
+          "product_name": "Elm Round Coffee Table – Natural Oak / 90cm",
+          "quantity": 1,
+          "unit_price": 549.00,
+          "total": 549.00,
+          "image": "https://images.unsplash.com/photo-1611967164521-abae8fba4668?w=200&q=80"
+        }
+      ],
+      "subtotal": 1848.00,
+      "discount": 0.00,
+      "shipping_cost": 99.00,
+      "tax": 148.00,
+      "total": 2095.00,
+      "shipping_address": {
+        "street": "12 Birchwood Lane",
+        "city": "Austin",
+        "state": "TX",
+        "zip": "73301",
+        "country": "US"
+      },
+      "shipping_method": "White glove delivery",
+      "tracking_number": "WH20260112-001",
+      "placed_at": "2026-01-12T14:22:00Z",
+      "delivered_at": "2026-01-19T10:00:00Z"
+    },
+    {
+      "id": "ord_002",
+      "customer_id": "cust_002",
+      "status": "in_transit",
+      "payment_status": "paid",
+      "payment_method": "paypal",
+      "items": [
+        {
+          "product_id": "prod_004",
+          "variant_id": "var_004c",
+          "product_name": "Oslo Platform Bed Frame – Queen / Natural Oak",
+          "quantity": 1,
+          "unit_price": 899.00,
+          "total": 899.00,
+          "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=200&q=80"
+        }
+      ],
+      "subtotal": 899.00,
+      "discount": 0.00,
+      "shipping_cost": 79.00,
+      "tax": 79.84,
+      "total": 1057.84,
+      "shipping_address": {
+        "street": "88 Harbor View Dr",
+        "city": "San Francisco",
+        "state": "CA",
+        "zip": "94102",
+        "country": "US"
+      },
+      "shipping_method": "Curbside delivery",
+      "tracking_number": "WH20260210-002",
+      "placed_at": "2026-02-10T09:15:00Z",
+      "delivered_at": null
+    },
+    {
+      "id": "ord_003",
+      "customer_id": "cust_003",
+      "status": "processing",
+      "payment_status": "paid",
+      "payment_method": "credit_card",
+      "items": [
+        {
+          "product_id": "prod_007",
+          "variant_id": "var_007b",
+          "product_name": "Harvest Dining Table – 180cm / Matte Black Legs",
+          "quantity": 1,
+          "unit_price": 1099.00,
+          "total": 1099.00,
+          "image": "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?w=200&q=80"
+        },
+        {
+          "product_id": "prod_008",
+          "variant_id": "var_008a",
+          "product_name": "Ven Wishbone Dining Chair – Natural Beech",
+          "quantity": 4,
+          "unit_price": 199.00,
+          "total": 796.00,
+          "image": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=200&q=80"
+        }
+      ],
+      "subtotal": 1895.00,
+      "discount": 189.50,
+      "shipping_cost": 0.00,
+      "tax": 140.44,
+      "total": 1845.94,
+      "shipping_address": {
+        "street": "34 Fern Valley Rd",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98101",
+        "country": "US"
+      },
+      "shipping_method": "White glove delivery",
+      "tracking_number": null,
+      "coupon_code": "WELCOME10",
+      "placed_at": "2026-03-20T11:40:00Z",
+      "delivered_at": null
+    }
+  ],
+
+  "reviews": [
+    {
+      "id": "rev_001",
+      "product_id": "prod_001",
+      "customer_id": "cust_001",
+      "rating": 5,
+      "title": "Perfect sofa – exactly what I was looking for",
+      "body": "The Haven sofa is stunning. The fabric feels premium, the cushions are incredibly comfortable, and the walnut legs are a beautiful touch. Assembly was straightforward and delivery was seamless.",
+      "verified_purchase": true,
+      "helpful_votes": 34,
+      "created_at": "2026-01-25T15:00:00Z"
+    },
+    {
+      "id": "rev_002",
+      "product_id": "prod_007",
+      "customer_id": "cust_003",
+      "rating": 5,
+      "title": "A genuine showstopper in our dining room",
+      "body": "The Harvest table exceeded all expectations. The reclaimed pine has so much character and the hairpin legs are solid and well-finished. Got so many compliments already.",
+      "verified_purchase": true,
+      "helpful_votes": 18,
+      "created_at": "2026-03-22T09:30:00Z"
+    },
+    {
+      "id": "rev_003",
+      "product_id": "prod_004",
+      "customer_id": "cust_002",
+      "rating": 4,
+      "title": "Sleek and sturdy – minor assembly challenge",
+      "body": "Love the minimal Scandinavian look of this bed. Very sturdy once assembled. Instructions could be clearer for the headboard attachment but the result is worth it.",
+      "verified_purchase": true,
+      "helpful_votes": 12,
+      "created_at": "2026-02-28T11:00:00Z"
+    }
+  ],
+
+  "coupons": [
+    {
+      "id": "coup_001",
+      "code": "WELCOME10",
+      "type": "percentage",
+      "value": 10,
+      "min_order_value": 500.00,
+      "usage_limit": 1000,
+      "used_count": 218,
+      "expires_at": "2026-12-31T23:59:59Z",
+      "is_active": true
+    },
+    {
+      "id": "coup_002",
+      "code": "FREESHIP",
+      "type": "free_shipping",
+      "value": 0,
+      "min_order_value": 1500.00,
+      "usage_limit": 500,
+      "used_count": 87,
+      "expires_at": "2026-06-30T23:59:59Z",
+      "is_active": true
+    },
+    {
+      "id": "coup_003",
+      "code": "SPRING150",
+      "type": "fixed",
+      "value": 150,
+      "min_order_value": 1200.00,
+      "usage_limit": 200,
+      "used_count": 44,
+      "expires_at": "2026-05-31T23:59:59Z",
+      "is_active": true
+    }
+  ],
+
+  "shipping_methods": [
+    {
+      "id": "ship_001",
+      "name": "Curbside delivery",
+      "description": "Driver delivers to your driveway or building entrance.",
+      "estimated_days": "5–10 business days",
+      "base_cost": 79.00
+    },
+    {
+      "id": "ship_002",
+      "name": "Room of choice delivery",
+      "description": "Team brings furniture to the room of your choice.",
+      "estimated_days": "7–14 business days",
+      "base_cost": 129.00
+    },
+    {
+      "id": "ship_003",
+      "name": "White glove delivery",
+      "description": "Full delivery, assembly, packaging removal and room placement.",
+      "estimated_days": "10–18 business days",
+      "base_cost": 199.00
+    },
+    {
+      "id": "ship_004",
+      "name": "Free shipping (orders over $2,000)",
+      "description": "Complimentary curbside delivery on qualifying orders.",
+      "estimated_days": "5–10 business days",
+      "base_cost": 0.00,
+      "min_order_value": 2000.00
+    }
+  ]
+}
