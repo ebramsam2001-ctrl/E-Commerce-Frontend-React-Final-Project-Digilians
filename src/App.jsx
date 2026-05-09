@@ -1,19 +1,19 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import './App.css'
+import './App.css';
 
+// Correct imports – folder names exactly as they appear in src/Components/
 import MasterLayout from './Components/MasterLayout/MasterLayout';
-import Home from './Components/home/Home';
-import NotFound from './Components/notFound/NotFound';
-import SignningLayout from './Components/signingLayout/SigningLayout';
-import SignIn from './Components/signingLayout/SignIn';
-import SignUp from './Components/signingLayout/SignUp';
-import Shop from './Components/shop/Shop';
-import MyAccount from "./Components/MyAccount/MyAccount";
-import Products from './Components/products/Products';
-import SingleProduct from "./Components/products/SingleProduct"
+import Home from './Components/Home/Home';
+import NotFound from './Components/NotFound/NotFound';
+import SignningLayout from './Components/SigningLayout/SigningLayout';  // folder is SigningLayout, component name kept as SignningLayout
+import SignIn from './Components/SigningLayout/SignIn';
+import SignUp from './Components/SigningLayout/SignUp';
+import Shop from './Components/Shop/Shop';
+import MyAccount from './Components/MyAccount/MyAccount';  // fixed: removed ".jsx" from folder name
+import Products from './Components/Products/Products';
+import SingleProduct from './Components/Products/SingleProduct';
 
 function App() {
-
   const router = createBrowserRouter([
     {
       path: "",
@@ -21,19 +21,19 @@ function App() {
       children: [
         {
           element: <Home />,
-          index: true
+          index: true,
         },
         {
           path: "/home",
-          element: <Home />
+          element: <Home />,
         },
         {
           path: "/shop",
-          element: <Shop />
+          element: <Shop />,
         },
         {
           path: "/myaccount",
-          element: <MyAccount />
+          element: <MyAccount />,
         },
         {
           path: "/products",
@@ -41,13 +41,13 @@ function App() {
           children: [
             {
               element: <Products />,
-              index: true
+              index: true,
             },
             {
               path: "*",
-              element: <NotFound />
-            }
-          ]
+              element: <NotFound />,
+            },
+          ],
         },
         {
           path: "/abc",
@@ -55,19 +55,19 @@ function App() {
           children: [
             {
               element: <SingleProduct />,
-              index: true
+              index: true,
             },
             {
               path: "*",
-              element: <NotFound />
-            }
-          ]
+              element: <NotFound />,
+            },
+          ],
         },
         {
           path: "*",
-          element: <NotFound />
-        }
-      ]
+          element: <NotFound />,
+        },
+      ],
     },
     {
       path: "/signin",
@@ -75,25 +75,21 @@ function App() {
       children: [
         {
           element: <SignIn />,
-          index: true
+          index: true,
         },
         {
           path: "signup",
-          element: <SignUp />
+          element: <SignUp />,
         },
         {
           path: "*",
-          element: <NotFound />
-        }
-      ]
-    }
+          element: <NotFound />,
+        },
+      ],
+    },
   ]);
 
-  return (
-    <>
-      <RouterProvider router={router}></RouterProvider>
-    </>
-  )
+  return <RouterProvider router={router} />;
 }
 
 export default App;
