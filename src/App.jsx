@@ -8,7 +8,7 @@ import SignningLayout from './Components/signingLayout/SigningLayout';
 import SignIn from './Components/signingLayout/SignIn';
 import SignUp from './Components/signingLayout/SignUp';
 import Shop from './Components/shop/Shop';
-import MyAccount from './Components/myAccount.jsx/MyAccount';
+import MyAccount from "./Components/MyAccount/MyAccount";
 import Products from './Components/products/Products';
 import SingleProduct from "./Components/products/SingleProduct"
 
