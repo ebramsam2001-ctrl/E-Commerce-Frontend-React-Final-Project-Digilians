@@ -11,7 +11,7 @@ export default function ShopProducts() {
     useEffect(() => {
         const loadProducts = async () => {
             try {
-                const response = await axios.get("http://localhost:5000/products");
+                const response = await axios.get("http://e-commerce-frontend-react-final-pro-seven.vercel.app/products");
                 console.log(response.data);
                 setProducts(response.data.products || response.data);
             } catch (error) {

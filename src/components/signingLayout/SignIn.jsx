@@ -21,7 +21,7 @@ export default function SignIn() {
     };
 
     const loginAuth = async ({ email, password }) => {
-        const response = await axios.post("http://localhost:5000/auth/login", { email, password });
+        const response = await axios.post("http://e-commerce-frontend-react-final-pro-seven.vercel.app/auth/login", { email, password });
 
         localStorage.setItem("LoginUser", JSON.stringify(response.data));
 
