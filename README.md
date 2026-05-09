@@ -92,9 +92,10 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📧 Contact
 
-**Project Maintainer:** Your Name
-**LinkedIn:** [Your Profile Link]
-**Email:** yourname@example.com
+**Project Maintainer:** Ebram Samuel
+**LinkedIn:** www.linkedin.com/in/ebram-samuel-268b07339
+
+**Email:** ebramsam2001@gmail.com
 
 ---
 
