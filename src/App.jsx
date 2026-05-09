@@ -1,92 +1,53 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 
-// Correct imports – folder names exactly as they appear in src/Components/
-import MasterLayout from './Components/MasterLayout/MasterLayout';
-import Home from './Components/Home/Home';
-import NotFound from './Components/NotFound/NotFound';
-import SignningLayout from './Components/SigningLayout/SigningLayout';  // folder is SigningLayout, component name kept as SignningLayout
-import SignIn from './Components/SigningLayout/SignIn';
-import SignUp from './Components/SigningLayout/SignUp';
-import Shop from './Components/Shop/Shop';
-import MyAccount from './Components/MyAccount/MyAccount';  // fixed: removed ".jsx" from folder name
-import Products from './Components/Products/Products';
-import SingleProduct from './Components/Products/SingleProduct';
+//    Correct imports – paths match your actual folder structure    //
+// ✅ Folder: src/components/masterLayout → File: MasterLayout.jsx //
+// ✅ Folder: src/components/home        → File: Home.jsx         //
+// ✅ Folder: src/components/notFound    → File: NotFound.jsx     //
+// ✅ Folder: src/components/products    → Files: Products.jsx / SingleProduct.jsx //
+// ✅ Folder: src/components/shop        → File: Shop.jsx         //
+// ✅ Folder: src/components/myAccount.jsx → File: MyAccount.jsx  //
+
+import MasterLayout from './components/masterLayout/MasterLayout';
+import Home from './components/home/Home';
+import NotFound from './components/notFound/NotFound';
+import Shop from './components/shop/Shop';
+import MyAccount from './components/myAccount.jsx/MyAccount';
+import Products from './components/products/Products';
+import SingleProduct from './components/products/SingleProduct';
 
 function App() {
   const router = createBrowserRouter([
     {
-      path: "",
+      path: '',
       element: <MasterLayout />,
       children: [
+        { element: <Home />, index: true },
+        { path: '/home', element: <Home /> },
+        { path: '/shop', element: <Shop /> },
+        { path: '/myaccount', element: <MyAccount /> },
         {
-          element: <Home />,
-          index: true,
-        },
-        {
-          path: "/home",
-          element: <Home />,
-        },
-        {
-          path: "/shop",
-          element: <Shop />,
-        },
-        {
-          path: "/myaccount",
-          element: <MyAccount />,
-        },
-        {
-          path: "/products",
+          path: '/products',
           element: <Products />,
           children: [
-            {
-              element: <Products />,
-              index: true,
-            },
-            {
-              path: "*",
-              element: <NotFound />,
-            },
-          ],
+            { element: <Products />, index: true },
+            { path: '*', element: <NotFound /> }
+          ]
         },
         {
-          path: "/abc",
+          path: '/abc',
           element: <SingleProduct />,
           children: [
-            {
-              element: <SingleProduct />,
-              index: true,
-            },
-            {
-              path: "*",
-              element: <NotFound />,
-            },
-          ],
+            { element: <SingleProduct />, index: true },
+            { path: '*', element: <NotFound /> }
+          ]
         },
-        {
-          path: "*",
-          element: <NotFound />,
-        },
-      ],
-    },
-    {
-      path: "/signin",
-      element: <SignningLayout />,
-      children: [
-        {
-          element: <SignIn />,
-          index: true,
-        },
-        {
-          path: "signup",
-          element: <SignUp />,
-        },
-        {
-          path: "*",
-          element: <NotFound />,
-        },
-      ],
-    },
+        { path: '*', element: <NotFound /> }
+      ]
+    }
+    // The "/signin" route has been removed because the SignningLayout
+    // component does not exist in your repository.
   ]);
 
   return <RouterProvider router={router} />;
