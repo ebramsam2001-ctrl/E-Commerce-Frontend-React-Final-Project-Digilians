@@ -1,16 +1,16 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css'
 
-import MasterLayout from './Components/MasterLayout/MasterLayout';
-import Home from './Components/home/Home';
-import NotFound from './Components/notFound/NotFound';
-import SignningLayout from './Components/signningLayout/SignningLayout';
-import SignIn from './Components/signningLayout/SignIn';
-import SignUp from './Components/signningLayout/SignUp';
-import Shop from './Components/shop/Shop';
-import MyAccount from './Components/myAccount.jsx/MyAccount';
-import Products from './Components/products/Products';
-import SingleProduct from "./Components/products/SingleProduct"
+import MasterLayout from './components/MasterLayout/MasterLayout';
+import Home from './components/home/Home';
+import NotFound from './components/notFound/NotFound';
+import SignningLayout from './components/signingLayout/SigningLayout';
+import SignIn from './components/signingLayout/SignIn';
+import SignUp from './components/signingLayout/SignUp';
+import Shop from './components/shop/Shop';
+import MyAccount from './components/myAccount.jsx/MyAccount';
+import Products from './components/products/Products';
+import SingleProduct from "./components/products/SingleProduct"
 
 function App() {
 
